@@ -1,0 +1,48 @@
+{
+    "manifestVersion": 1,
+    "id": "salesforce-app-installer",
+    "name": "Managed Package installer for Salesforce orgs",
+    "version": "0.3.0",
+    "publisher": "BalinderSingh",
+    "targets": [
+        {
+            "id": "Microsoft.VisualStudio.Services"
+        }
+    ],  
+    "description": "Utility to install a salesforce managed package app to a salesforce org.",
+    "categories": [
+        "Azure Pipelines"
+    ],
+    "galleryFlags": [
+        "Public"
+    ],
+    "icons": {
+        "default": "images/extension-icon.png"        
+    },
+    "files": [
+        {
+            "path": "buildAndReleaseTask"
+        }
+    ],
+    "contributions": [
+        {
+            "id": "salesforce-app-installer-task",
+            "type": "ms.vss-distributed-task.task",
+            "targets": [
+                "ms.vss-distributed-task.tasks"
+            ],
+            "properties": {
+                "name": "buildAndReleaseTask"
+            }
+        }
+    ],
+    "content": {
+        "details": {
+            "path": "overview.md"
+        }
+    },
+    "tags": [
+        "salesforce",
+        "managed package install"
+    ]
+}

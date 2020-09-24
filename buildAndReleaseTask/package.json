@@ -1,0 +1,21 @@
+{
+  "name": "sfapp-package-installer",
+  "version": "1.0.0",
+  "description": "Utility to install a salesforce managed package app to a salesforce org",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Balinder Singh",
+  "license": "ISC",
+  "dependencies": {
+    "azure-pipelines-task-lib": "^2.10.0",
+    "uuid": "^8.3.0"
+  },
+  "devDependencies": {
+    "@types/mocha": "^8.0.2",
+    "@types/node": "^14.10.1",
+    "@types/q": "^1.5.4",
+    "sync-request": "^6.1.0"
+  }
+}
